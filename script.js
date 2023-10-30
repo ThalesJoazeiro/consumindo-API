@@ -18,6 +18,11 @@ fetchApi(1);
 btnGo.addEventListener('click', async (event) => {
     event.preventDefault();
     const result = await fetchApi(characterId.value);
-    content.textContent = `${JSON.stringify(result, undefined, 2)}`;
-    image.src = `${result.image}`;
+    content.textContent = `${JSON.stringify(result, (key, value) => {
+        if (key == 'episode'){
+            return undefined;
+        }
+        return value;
+    }, 2)}`;
+    image.src = result.image;
 })
