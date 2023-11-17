@@ -26,3 +26,9 @@ btnGo.addEventListener('click', async (event) => {
     }, 2)}`;
     image.src = result.image;
 })
+
+
+/* 
+JSON.stringify =  converter objeto para json
+JSON.parse = converter o json para objeto
+*/
