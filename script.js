@@ -29,6 +29,6 @@ btnGo.addEventListener('click', async (event) => {
 
 
 /* 
-JSON.stringify =  converter objeto para json
+JSON.stringify =  converter objeto para json que é exibido em formato de string 
 JSON.parse = converter o json para objeto
 */
