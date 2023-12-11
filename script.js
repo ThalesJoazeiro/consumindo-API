@@ -13,7 +13,12 @@ const fetchApi = (value) => {
     return result;
 }
 
-fetchApi(1);
+const keys = ['name', 'status', 'species', 'gender', 'origin', 'image', 'episode'];
+
+const buildResult = (result) => {
+    const newObject = {};
+    keys.map((key) => document.getElementById(key));
+}
 
 btnGo.addEventListener('click', async (event) => {
     event.preventDefault();
